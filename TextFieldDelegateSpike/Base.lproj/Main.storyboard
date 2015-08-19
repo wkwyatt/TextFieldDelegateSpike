@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextFieldDelegateSpike" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your zip" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xif-MR-Ika">
+                                <rect key="frame" x="16" y="35" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0i1-MI-nCx">
+                                <rect key="frame" x="16" y="111" width="511" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zUn-ab-D9z">
+                                <rect key="frame" x="535" y="110" width="51" height="31"/>
+                            </switch>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0.00" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G1b-jI-PFu">
+                                <rect key="frame" x="16" y="72" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xif-MR-Ika" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="2ra-eq-P0O"/>
+                            <constraint firstItem="G1b-jI-PFu" firstAttribute="leading" secondItem="0i1-MI-nCx" secondAttribute="leading" id="7Rn-No-a6t"/>
+                            <constraint firstItem="0i1-MI-nCx" firstAttribute="top" secondItem="G1b-jI-PFu" secondAttribute="bottom" constant="9" id="A0d-a4-WfM"/>
+                            <constraint firstItem="xif-MR-Ika" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NZA-c5-wAR"/>
+                            <constraint firstItem="xif-MR-Ika" firstAttribute="trailing" secondItem="G1b-jI-PFu" secondAttribute="trailing" id="Rtz-oF-Hzw"/>
+                            <constraint firstItem="G1b-jI-PFu" firstAttribute="leading" secondItem="xif-MR-Ika" secondAttribute="leading" id="TOe-6l-Ld9"/>
+                            <constraint firstItem="zUn-ab-D9z" firstAttribute="top" secondItem="G1b-jI-PFu" secondAttribute="bottom" constant="8" symbolic="YES" id="a1h-ma-HVK"/>
+                            <constraint firstAttribute="centerX" secondItem="xif-MR-Ika" secondAttribute="centerX" id="bZd-O4-BP5"/>
+                            <constraint firstItem="zUn-ab-D9z" firstAttribute="trailing" secondItem="G1b-jI-PFu" secondAttribute="trailing" id="dsS-s1-gTt"/>
+                            <constraint firstItem="G1b-jI-PFu" firstAttribute="top" secondItem="xif-MR-Ika" secondAttribute="bottom" constant="7" id="pkj-2z-Ygf"/>
+                            <constraint firstItem="zUn-ab-D9z" firstAttribute="leading" secondItem="0i1-MI-nCx" secondAttribute="trailing" constant="8" symbolic="YES" id="ywo-Wj-9fS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cashTextField" destination="G1b-jI-PFu" id="6ct-7F-wZc"/>
+                        <outlet property="switchTextField" destination="0i1-MI-nCx" id="0wI-vI-vLw"/>
+                        <outlet property="switchTextFieldControl" destination="zUn-ab-D9z" id="NP5-RQ-u8S"/>
+                        <outlet property="zipcodeTextField" destination="xif-MR-Ika" id="TEb-yr-qrY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="469" y="305"/>
+        </scene>
+    </scenes>
+</document>
