@@ -86,7 +86,9 @@
 				C5DE56F21B8523D600F7DF00 /* AppDelegate.swift */,
 				C5DE56F61B8523D600F7DF00 /* Main.storyboard */,
 				C5DE56F41B8523D600F7DF00 /* ViewController.swift */,
-				C5DE57121B85244000F7DF00 /* TextFieldDelegates */,
+				C5DE57131B85246300F7DF00 /* ZipCodeTextFieldDelegate.swift */,
+				C5DE57171B85249100F7DF00 /* LockableTextFieldDelegate.swift */,
+				C5DE57151B85247900F7DF00 /* CashTextFieldDelegate.swift */,
 				C5DE56F91B8523D600F7DF00 /* Images.xcassets */,
 				C5DE56FB1B8523D600F7DF00 /* LaunchScreen.xib */,
 				C5DE56F01B8523D600F7DF00 /* Supporting Files */,
@@ -117,16 +119,6 @@
 				C5DE57071B8523D600F7DF00 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C5DE57121B85244000F7DF00 /* TextFieldDelegates */ = {
-			isa = PBXGroup;
-			children = (
-				C5DE57131B85246300F7DF00 /* ZipCodeTextFieldDelegate.swift */,
-				C5DE57151B85247900F7DF00 /* CashTextFieldDelegate.swift */,
-				C5DE57171B85249100F7DF00 /* LockableTextFieldDelegate.swift */,
-			);
-			name = TextFieldDelegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,6 +423,7 @@
 				C5DE570E1B8523D600F7DF00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5DE570F1B8523D600F7DF00 /* Build configuration list for PBXNativeTarget "TextFieldDelegateSpikeTests" */ = {
 			isa = XCConfigurationList;
@@ -439,6 +432,7 @@
 				C5DE57111B8523D600F7DF00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

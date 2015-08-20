@@ -16,15 +16,16 @@ import UIKit
 
 class ZipCodeTextFieldDelegate: NSObject, UITextFieldDelegate {
     
-    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
-        // TODO: Only allow for numeric input
-        
-        return true
-    }
     
-    func textFieldShouldEndEditing(textField: UITextField) -> Bool {
+    
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         // TODO: Stop user from typing more than 5 characters
         
-        return true
+        var zip = textField.text as NSString
+        
+        zip = zip.stringByReplacingCharactersInRange(range, withString: string)
+        
+        return zip.length <= 5
     }
+
 }
