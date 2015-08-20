@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     // Outlets
     @IBOutlet weak var zipcodeTextField: UITextField!
@@ -33,6 +33,21 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+        return self.switchTextFieldControl.on
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return true;
+    }
+    
+    @IBAction func toggleTheTextEditor(sender: AnyObject) {
+        
+        if !(sender as! UISwitch).on {
+            self.switchTextField.resignFirstResponder()
+        }
+    }
 }
 
